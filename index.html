@@ -3,7 +3,6 @@
 
 </head>
 <body>
-
     <style>
     .boxcast-countdown
     {
@@ -31,20 +30,6 @@
         };
 
         const SPFIO = {
-            Dev:{
-                langs:{
-                    "Italiano": "it",
-                    "Français": "fr",
-                    "Nederlands": "nl",
-                    "Português": "pt",
-                    "Español": "es",
-                    "Deutsch": "de",
-                    "English": "en",
-                },
-                delay: 45,
-                events:["7uceQ", "7uceQ", "7uceQ",
-                        "688Qm", "688Qm", "688Qm", "688Qm", "688Qm"]
-            },
             Live:{
                 langs:{
                     "Italiano": "it",
@@ -54,17 +39,16 @@
                     "Español": "es",
                     "Deutsch": "de"
                 },
-                delay: 45,
+                delay: 2,
                 events:([
-                    ["7FbPa", "7FbPa", "7FbPa"],
-                    ["9zn6o", "9zn6o", "9zn6o", "9zn6o", "9zn6o", "9zn6o"],
-                    ["8X4X8", "8X4X8"]
+                    ["session25", "session25", "session25"],
+                    ["TR44", "TR44", "TR44", "TR44", "TR44", "TR44"],
+                    ["session27", "session27"]
                 ]).flat()
             }
-
         };
 
-        Player(Channel.Basics2024, "#boxcast", 5000, SPFIO.Dev, "./mock.json");
+        Player(Channel.Basics2024, "#boxcast", 5000, SPFIO.Live, "./mock.json");
     </script>
 </body>
 </html>

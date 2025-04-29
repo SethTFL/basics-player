@@ -250,7 +250,9 @@ const SPFIOWidget =(props)=>
     return h("div", {id:"spfio"}, [
         h("div", {className:`lang-menu ${langGet ? "match" : ""}`}, buttons),
         (langGet && props.delay) && h("p", { ref:timerRender, id:"delay-indicator", style:{display:"none"}}),
-        langGet && h("iframe", {src:`https://truthforlife.m.spf.io/ze/${props.event}?embedSubtitleMode=true&channel=${langGet}&presetSubtitleFontSize=20px`}),
+        langGet && h("iframe", {
+            src:`https://truthforlife.m.spf.io/ze/${props.event}?embedSubtitleMode=true&channel=${langGet}&presetSubtitleFontSize=16px`,
+        }),
     ])
 }
 
